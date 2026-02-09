@@ -30,9 +30,7 @@ Access:
 - Backend API: http://localhost:8000
 - Frontend UI: http://localhost:3000
 
-## Assignment Parts
-
-### Part A: RAG Implementation
+## Assignment
 
 1. Data Ingestion & Indexing
 
@@ -52,20 +50,13 @@ See `backend/app/agent.py` for example code. Streaming support is optional, but 
 3. Orchestration
 
 Implement the answer generation. You may use any existing/popular library or provide all the code yourself.
+You will be evaluated based on the query complexity your agent can handle, here is a sample list of what we can expect it to do:
+- answer basic on-topic question (1 turn)
+- answer off-topic question relevantly (it should not be used as a free-version of ChatGPT by the end-user)
+- Handle long standing conversation
+- recommend relevant products
+- Help the users find what he needs based on its expertise
 
-### Part B: Evaluation
-
-Build a simple evaluation framework to measure the quality of your retrieval system using the sample queries provided in `data/sample_queries.json`.
-
-### Part C: Documentation
-
-Document your design decisions, trade-offs, and evaluation results.
-
-## Submission
-
-1. Complete your implementation
-2. Push to a private GitHub repository
-3. Share access with the Dialog team
 
 ---
 
